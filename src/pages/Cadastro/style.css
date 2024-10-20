@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* Estilo da pagina da pagina inicial */
+.cadastrar{
+  padding: .5em 2em;
+  display: grid;
+  grid-template-columns: 1fr 700px;
+  justify-items: center;
+  align-items: center;
+
+  .cadastrar__presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    & h1{
+      font: 600 1.95em var(--font2);
+    }
+  }
+  
+  .cadastrar__forms{
+    display: forms;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* justify-content: center; */
+
+    .cadastrar__forms-title{
+      font: 600 2.25em var(--font2);
+    }
+    
+    .cadastrar__forms-text{
+      padding-top: 1.5em;
+      text-align: center;
+      font: 300 .99em var(--font1);
+    }
+
+    .cadastrar__forms-separaitor{
+      width: 100%;
+      margin-top: 1em;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .cadastrar__forms-separaitor::before,
+    .cadastrar__forms-separaitor::after{
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #fff;
+    }
+
+    .cadastrar__forms-acess{
+      width: 100%;
+      display: flex;
+      gap: .5em;
+    }
+
+    .cadastrar__forms-login {
+      margin-top: 15px;
+      font: 400 1em var(--font2);
+    }
+
+    .cadastrar__forms-login a {
+      text-decoration: none;
+      font-family: var(--font1);
+      font-style: italic;
+      color: var(--color3);
+    }
+  }
+}
