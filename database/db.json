@@ -14,7 +14,6 @@
       "date": "1998-05-26",
       "phone": "(98) 98178-6487",
       "password": "1234567",
-      "confirmPassword": "1234567",
       "id": 2
     },
     {
@@ -23,7 +22,6 @@
       "date": "2006-08-03",
       "phone": "(657) 812-345516",
       "password": "909080",
-      "confirmPassword": "909080",
       "id": 3
     },
     {
@@ -32,8 +30,15 @@
       "date": "2001-07-10",
       "phone": "(65) 92869 6548",
       "password": "808090",
-      "confirmPassword": "808090",
       "id": 4
+    },
+    {
+      "name": "Lorana",
+      "email": "lora-2022@mail.com",
+      "date": "1991-08-05",
+      "phone": "(65) 93607-4436",
+      "password": "lora6969",
+      "id": 5
     }
   ]
 }

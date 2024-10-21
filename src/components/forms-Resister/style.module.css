@@ -25,7 +25,7 @@
   }
 
   & input[type="password"]{
-    width: 15vw;
+    width: 14vw;
   }
 
   & input::placeholder {
@@ -38,14 +38,15 @@
 .boxDobleCamp {
   width: 100%;
   display: flex;
-  gap: 2em;
+  gap: 3em;
 
   & input[type="date"]{
     flex-grow: 1;
   }
 
   & input[type="tel"]{
-    flex-grow: 3;
+    width: 100%;
+    flex-grow: 2;
   }
 }
 

@@ -15,10 +15,10 @@ export default function Cadastro (){
     <div className="cadastrar">
       <div className="cadastrar__presentation">
         <h1>Invista no Futuru de Grandes Ideias</h1>
-        <img src={ImageApresent} alt="Multiplas imagem de pessoas mechendo no computador" width={650}/>
+        <img src={ImageApresent} alt="Multiplas imagem de pessoas mechendo no computador" width={600}/>
       </div>
       <div className="cadastrar__forms">
-        <img src={LogoTech} alt="Logo da Tech Acadamy" width={350}/>
+        <img src={LogoTech} alt="Logo da Tech Acadamy" width={320}/>
         <h2 className="cadastrar__forms-title">Cadastar</h2>
         <p className="cadastrar__forms-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo earum assumenda?</p>
         <FormsRegister />

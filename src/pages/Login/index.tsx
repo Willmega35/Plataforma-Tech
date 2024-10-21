@@ -8,6 +8,9 @@ import ButtonLogin from '../../components/login-component'
 import "./home.css";
 
 export default function Login() {
+
+    const title = document.getElementById('title') as HTMLTitleElement
+    title.textContent = 'Login | Tech Academy'
     return (
     <div className="container">
         <div className="container__forms">
@@ -25,13 +28,13 @@ export default function Login() {
                 <ButtonLogin acess="#" typeAcess="GitHub"> Entre com a conta do GitHub </ButtonLogin>
             </span>
 
-            <span className="container__forms-resister">Não possui uma conta? <Link href="/Cadastrar">Cadastre-se</Link></span>
+            <span className="container__forms-resister">Não possui uma conta? <a href="/Cadastrar">Cadastre-se</a></span>
             <p className="container__forms-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam suscipit quibusdam, quae dicta debitis!</p>
         </div>
 
         <div className="constainer__presentation">
             <h1>Invista no Futuru de Grandes Ideias</h1>
-            <img src={ImageApresent} alt="Multiplas imagem de pessoas mechendo no computador"/>
+            <img src={ImageApresent} alt="Multiplas imagem de pessoas mechendo no computador" width={620}/>
         </div>
 
     </div>

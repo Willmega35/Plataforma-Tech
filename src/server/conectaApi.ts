@@ -3,18 +3,24 @@ import { FormData } from '../type/Valid-register'
 export default class ConectaApi {
   readonly API_URL = 'http://localhost:3000/user';
 
-  public async Usuario ( seach: string ) {
+  private async Usuario ( seach: string ) {
     const conectaApi = await fetch(`${this.API_URL}?q=${seach}`)
     const data = await conectaApi.json()
-    return data
+    return data[0]
+  }
+
+  public async Login ( seach: string ) {
+    const conectaApi = await fetch(`${this.API_URL}?name=${seach}`)
+    const data = await conectaApi.json()
+    return data[0]
   }
 
   public  async Cadastrar (data: FormData) : Promise<void> {
     let personResister:boolean = false
 
-    const value: FormData[] = await this.Usuario(data.name)
+    const value: FormData = await this.Usuario(data.name)
     
-    if (value.length === 0) personResister = true;
+    if (value === undefined) personResister = true;
     
     console.log(personResister)
     // console.log(value)
@@ -27,8 +33,6 @@ export default class ConectaApi {
         },
         body: JSON.stringify(data)
       })
-        .then( response => console.log(response.status))
-      
         console.log('Usuario cadastrado!')
         return
     }

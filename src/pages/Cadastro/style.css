@@ -2,7 +2,7 @@
 
 /* Estilo da pagina da pagina inicial */
 .cadastrar{
-  padding: .5em 2em;
+  padding: .5em 1em;
   display: grid;
   grid-template-columns: 1fr 700px;
   justify-items: center;
@@ -12,10 +12,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 
     & h1{
-      font: 600 1.95em var(--font2);
+      font: 600 3em var(--font2);
     }
   }
   

@@ -13,17 +13,17 @@
 
 .inputCamp {
   width: auto;
-  font: italic 300 1.3em var(--font1);
-  padding: .5em .75em .1em .75em ;
+  font: italic 300 1.5em var(--font1);
+  padding: .25em 12px  ;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .button {
   padding: 1em 5em;
   margin-top: 2em;
   margin-inline: 12em;
-  background-color: var(--button);
+  background-color: var(--color3);
   border: none;
   border-radius: 10px;
   font: italic 400 1em var(--font2);
