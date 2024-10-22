@@ -1,0 +1,38 @@
+.blogs-container{
+  box-sizing: content-box;
+  margin-top: 20px;
+  background-color: var(--color3);
+  border-radius: 25px;
+  padding: .5em 2em;
+  width: 450px;
+  height: 220px;
+
+  
+  .type-blog {
+    background-color: blue;
+    font: 400 15px var(--font1);
+    border-radius: 25px;
+    padding: 2px 10px;
+  }
+
+  .container-blogs {
+    padding-block: 2em;
+  }
+
+  .title-blog {
+    font: 500 2em var(--font2);
+  }
+
+  .description-blog{
+    font: italic 400 1em var(--font2);
+  }
+
+  .footer-blog{
+    display: flex;
+    justify-content: space-between;
+
+    & p {
+      font: 300 1em var(--font1);
+    }
+  }
+}

@@ -1,0 +1,57 @@
+body {
+  box-sizing: border-box;
+  background-color: white;
+}
+.container {
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.home-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: start;
+  grid-template-columns: 3fr 1fr;
+  /* grid-template-rows: 100px 2fr; */
+}
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* gap: 1rem;
+  padding: 2rem;
+  flex-flow: column; */
+
+  & .couses-container__title {
+    border-bottom: 1px solid black;
+    padding-inline: 1em;
+    margin: 5px 0;
+    grid-column: 1 / 4;
+    align-self: flex-end;
+    font: 500 1.5em var(--font1);
+    color: black;
+  }
+}
+.blog-container {
+  justify-items: end;
+  padding-left: 10px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  margin-top: 94px;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  & .blog-container__title {
+    font: 500 1.5em var(--font1);
+    color: black;
+  }
+}
