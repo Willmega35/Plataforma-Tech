@@ -1,6 +1,5 @@
 .blogs-container{
   box-sizing: content-box;
-  margin-top: 20px;
   background-color: var(--color3);
   border-radius: 25px;
   padding: .5em 2em;

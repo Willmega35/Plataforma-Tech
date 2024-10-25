@@ -8,7 +8,7 @@ interface contentBlog {
   img: string
 }
 
-export default function Blogs ({type, title, description, duration, img }: contentBlog){
+export default function Blog ({type, title, description, duration, img }: contentBlog){
   return(
     <div className="blogs-container">
       <span className="type-blog">{type}</span>

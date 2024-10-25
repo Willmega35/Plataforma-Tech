@@ -1,12 +1,12 @@
 .course-container {
   display: flex;
   flex-direction: column;
-  background-color: blue;
   padding: 1rem;
-  width: 350px;
-  height: 250px;
+  min-height: 200px;
+  background-color: var(--color1);
+  gap: 1rem;
   border-radius: 25px;
-  justify-content: space-around;
+  filter: drop-shadow(0 0 4px black);
   & h1 {
     font-family: var(--font1);
     font-weight: 600;
@@ -16,7 +16,9 @@
 .course-top {
   display: flex;
   & img {
-    /* border-radius: 50%; */
+    background-color: white;
+    padding: 4px;
+    border-radius: 8px;
     width: 32px;
     height: 32px;
     margin-right: auto;
@@ -24,11 +26,12 @@
 }
 .course-progress {
   display: flex;
+  margin-top: auto;
   & h1 {
     font-weight: 400;
     font-size: 16px;
   }
-  & #progress {
+  & :nth-child(2) {
     margin-left: auto;
   }
 }
