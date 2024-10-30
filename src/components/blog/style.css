@@ -5,7 +5,6 @@
   border-radius: 1rem;
   background-color: var(--color3);
   filter: drop-shadow(0 4px 4px rgba(0,0,0,0.25));
-
   .blog-type {
     margin-bottom: 0.5rem;
     background-color: var(--color1);

@@ -4,7 +4,7 @@ import ButtonLogin from "../../components/login-component";
 
 import ImageApresent from "../../assets/Imagem de Apresentação.png";
 import LogoTech from "../../assets/Logo Tech Academy.svg";
-import "./style.css";
+import "../accessStyle.css";
 
 export default function Cadastro (){
   
@@ -12,13 +12,13 @@ export default function Cadastro (){
   title!.innerText = "Cadastrar";
   return(
     // Containner com principal para o cadastro
-    <div className="signin-container">
-      <div className="signin-presentation">
+    <div className="access-container">
+      <div className="access-presentation">
         <h1>Invista no Futuru de Grandes Ideias</h1>
         <img src={ImageApresent} alt="Multiplas imagem de pessoas mechendo no computador"/>
       </div>
 
-      <div className="signin-form">
+      <div className="access-form">
         <img src={LogoTech} alt="Logo da Tech Acadamy" width={300}/>
         <h2>Cadastar</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo earum assumenda?</p>

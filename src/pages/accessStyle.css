@@ -1,0 +1,91 @@
+body:has(.access-container) {
+    background-color:#24247a !important;
+    color: white;
+  }
+  
+  .access-container {
+      display: grid;
+      width: 100%;
+      height: 100vh;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "apresent" "form";
+      justify-items: center;
+      align-items: center;
+  
+      .access-form{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--background);
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem 0 0 0.5rem;
+        padding: 0.5rem;
+        align-items: center;
+        gap: 0.5rem;
+        overflow-y: auto;
+        /* Titulo */
+        & > h2 {
+          font: 600 2rem var(--font2);
+        }
+        /* Decrição */
+        & > p {
+          text-align: center;
+          font: 400 1em var(--font1);
+          & a {
+            color: var(--color3);
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        /* Separação */
+        & > div {
+          width: 100%;
+          margin: 1rem 0;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          &::before, &::after {          
+            content: '';
+            flex: 1;
+            border-bottom: 2px solid #fff;
+          }
+        }
+        & > :last-child {
+          margin-top: auto;
+          font-size: 16px;
+          color: var(--color3);
+        }
+      }
+    
+      .access-presentation{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem;
+        & h1 {
+          text-align: center;
+          font-family: var(--font1);
+        }
+        & img {
+          width: 50%;
+          filter: drop-shadow(2px 2px 8px black);
+        }
+      }
+  }
+  @media(max-width: 1024px) {
+    .access-container {
+      grid-template-columns: auto;
+      .access-form {
+        border-radius: 0;
+      }
+      .access-presentation {
+        display: none;
+      }
+    }
+  }
