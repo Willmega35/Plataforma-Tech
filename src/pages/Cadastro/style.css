@@ -1,72 +1,84 @@
 @charset "utf-8";
-
 /* Estilo da pagina da pagina inicial */
-.cadastrar{
-  padding: .5em 1em;
+.signin-container {
   display: grid;
-  grid-template-columns: 1fr 700px;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 2fr 1.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "apresent" "forms";
   justify-items: center;
   align-items: center;
 
-  .cadastrar__presentation{
+  .signin-presentation {
+    grid-area: "apresent";
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
+    padding: 0.5rem;
+    & h1 {
+      text-align: center;
 
-    & h1{
-      font: 600 3em var(--font2);
+      font-family: var(--font1);
+    }
+    & img {
+      min-width: 400px;
+      max-width: 600px;
+      width: 50%;
+      filter: drop-shadow(2px 2px 8px black);
     }
   }
-  
-  .cadastrar__forms{
-    display: forms;
+  .signin-form{
+    grid-area: "forms";
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    /* justify-content: center; */
-
-    .cadastrar__forms-title{
-      font: 600 2.25em var(--font2);
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    /* Titulo */
+    & > h2 {
+      font: 600 2rem var(--font2);
     }
-    
-    .cadastrar__forms-text{
-      padding-top: 1.5em;
+    /* Decrição */
+    & > p {
       text-align: center;
-      font: 300 .99em var(--font1);
+      font: 300 1em var(--font1);
+      & a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
-
-    .cadastrar__forms-separaitor{
+    /* Separação */
+    & > div {
       width: 100%;
-      margin-top: 1em;
+      margin: 1rem 0;
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 0.5rem;
+      &::before, &::after {          
+        content: '';
+        flex: 1;
+        border-bottom: 2px solid #fff;
+      }
     }
-
-    .cadastrar__forms-separaitor::before,
-    .cadastrar__forms-separaitor::after{
-      content: '';
-      flex: 1;
-      border-bottom: 1px solid #fff;
+    & :last-child {
+      margin-top: auto;
     }
-
-    .cadastrar__forms-acess{
-      width: 100%;
-      display: flex;
-      gap: .5em;
-    }
-
-    .cadastrar__forms-login {
-      margin-top: 15px;
-      font: 400 1em var(--font2);
-    }
-
-    .cadastrar__forms-login a {
-      text-decoration: none;
-      font-family: var(--font1);
-      font-style: italic;
-      color: var(--color3);
+  }
+}
+@media(max-width: 1024px) {
+  .signin-container {
+    grid-template-columns: auto;
+    .signin-presentation {
+      display: none;
     }
   }
 }

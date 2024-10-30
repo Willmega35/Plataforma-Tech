@@ -12,29 +12,25 @@ export default function Login() {
     const title = document.getElementById('title') as HTMLTitleElement
     title.textContent = 'Login | Tech Academy'
     return (
-    <div className="container">
-        <div className="container__forms">
-            <img src={LogoTech} alt="Logo do Tech Academy" width={400}/>
-            <h2 className="container__forms-title">Login</h2>
-            <p className="container__forms-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos esse corrupti impedit porro.</p> 
+    <div className="login-container">
+        <div className="login-form">
+            <img src={LogoTech} alt="Logo do Tech Academy" width={300}/>
+            <h2>Login</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos esse corrupti impedit porro.</p> 
             <FormsLogin />
 
-            <div className="contaner__forms-separaitor">
-            <span>ou</span>
-            </div>
+            <div>ou</div>
     
-            <span className="contaner__forms_ohter">
-                <ButtonLogin acess="#" typeAcess="Google"> Entre com a conta do Google </ButtonLogin>
-                <ButtonLogin acess="#" typeAcess="GitHub"> Entre com a conta do GitHub </ButtonLogin>
-            </span>
-
-            <span className="container__forms-resister">Não possui uma conta? <a href="/Cadastrar">Cadastre-se</a></span>
-            <p className="container__forms-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam suscipit quibusdam, quae dicta debitis!</p>
+            <ButtonLogin acess="#" typeAcess="Google"> Entre com a conta do Google </ButtonLogin>
+            <ButtonLogin acess="#" typeAcess="GitHub"> Entre com a conta do GitHub </ButtonLogin>
+            
+            <p>Não possui uma conta? <a href="/Cadastrar">Cadastre-se</a></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse aperiam suscipit quibusdam, quae dicta debitis!</p>
         </div>
 
-        <div className="constainer__presentation">
-            <h1>Invista no Futuru de Grandes Ideias</h1>
-            <img src={ImageApresent} alt="Multiplas imagem de pessoas mechendo no computador" width={620}/>
+        <div className="login-presentation">
+            <h1>Invista no Futuro de Grandes Ideias</h1>
+            <img src={ImageApresent} alt="Multiplas imagem de pessoas mechendo no computador"/>
         </div>
 
     </div>

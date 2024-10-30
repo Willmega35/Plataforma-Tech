@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .campDeAcesso{
@@ -20,9 +19,9 @@
 }
 
 .button {
-  padding: 1em 5em;
-  margin-top: 2em;
-  margin-inline: 12em;
+  padding: 0.5em;
+  width: 50%;
+  margin: 0 auto;
   background-color: var(--color3);
   border: none;
   border-radius: 10px;

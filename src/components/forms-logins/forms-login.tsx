@@ -10,7 +10,7 @@ export default function FormsLogin (){
   const navigate = useNavigate();
   const { register, handleSubmit } = useForm()
   
-  const validSubimit = async (data: {user: string, password: string})=> {
+  const validSubmit = async (data: {user: string, password: string})=> {
     const requestData: User = await new ConectaApi().Login(data.user);
 
     if (requestData == undefined) {
@@ -26,7 +26,7 @@ export default function FormsLogin (){
   }
   
   return(
-    <form onSubmit={handleSubmit(validSubimit)} className={style.forms}>
+    <form onSubmit={handleSubmit(validSubmit)} className={style.forms}>
       <span className={style.campDeAcesso}>
         <label htmlFor="" className={style.textPerf}>Email ou Usuario</label>
         <input { ...register('user')} className={style.inputCamp} type="text"/>
