@@ -2,10 +2,10 @@
 import LogoTech from '../../assets/Logo Tech Academy.svg'
 import ImageApresent from '../../assets/Imagem de Apresentação.png'
 
-import FormsLogin from '../../components/forms-logins/forms-login'
+import FormsLogin from '../../components/forms/FormLogin'
 import ButtonLogin from '../../components/login-component'
 
-import "./home.css";
+import "./style.css";
 
 export default function Login() {
 

@@ -1,5 +1,5 @@
 // Importação das Imagens para a tela
-import FormsRegister from "../../components/forms-Register/formsRegister";
+import FormsRegister from "../../components/forms/FormRegister";
 import ButtonLogin from "../../components/login-component";
 
 import ImageApresent from "../../assets/Imagem de Apresentação.png";

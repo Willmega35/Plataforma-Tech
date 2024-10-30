@@ -10,16 +10,14 @@ interface contentBlog {
 
 export default function Blog ({type, title, description, duration, img }: contentBlog){
   return(
-    <div className="blogs-container">
-      <span className="type-blog">{type}</span>
-      <div className="container-blogs">
-        <h1 className="title-blog">{title}</h1>
-        <p className="description-blog">{description}</p>
-      </div>
-      <span className="footer-blog">
+    <div className="blog-container">
+      <h1 className="blog-type">{type}</h1>
+      <h1 className="blog-title">{title}</h1>
+      <p className="blog-description">{description}</p>
+      <div className="blog-date">
         <p>{duration}</p>
         <img src={img} alt="" />
-      </span>
+      </div>
     </div>
   ) 
 }

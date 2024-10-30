@@ -1,5 +1,7 @@
-@charset "utf-8";
-/* Estilo da pagina da pagina inicial */
+body:has(.signin-container) {
+  background-color: var(--background) !important;
+  color: white;
+}
 .signin-container {
   display: grid;
   width: 100%;
@@ -25,6 +27,7 @@
       font-family: var(--font1);
     }
     & img {
+      margin-top: 1rem;
       min-width: 400px;
       max-width: 600px;
       width: 50%;
@@ -47,9 +50,9 @@
     /* Decrição */
     & > p {
       text-align: center;
-      font: 300 1em var(--font1);
+      font: 400 1em var(--font1);
       & a {
-        color: white;
+        color: var(--color3);
         text-decoration: none;
         &:hover {
           text-decoration: underline;

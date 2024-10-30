@@ -18,22 +18,28 @@ export default function Usuario (){
       <div className="user-container">
         <Header></Header>
         <div className="home-grid">
+          
           <div className="courses-container">
             <h1>Continue suas aulas</h1>
-            <div className="courses">
+            <div>
               <Course title="Curso de Ingles" progress={41} color={"blue"} image={cursoIngles}/>
               <Course title="Curso de HTML e CSS" progress={90} color={"blue"} image={cursoHtmlCss}/>
               <Course title="Curso de JS" progress={71} color={"blue"} image={cursoJs}/>
             </div>
           </div>
 
-          <div className="blog-container">
+          <div className="blogs-container">
             <h1>Blogs</h1>
-            <div className="blogs">
-              <Blog title="Lua - Para quer serve e o q..." description="Loren epson not epit..." duration="3 messes" img={user1} type="Programação"/>
-              <Blog title="Frameworks mais para d..." description="Loren epson not epit..." duration="6 messes" img={user2} type="Programação"/>
+            <div>
+              <Blog title="Lua - Para quer serve e o Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ipsa voluptatibus?"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum maiores, assumenda totam quod labore ipsam quibusdam!"
+              duration="3 meses" img={user1} type="Programação"/>
+              <Blog title="Frameworks mais para Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ipsa voluptatibus?"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum maiores, assumenda totam quod labore ipsam quibusdam!"
+              duration="6 meses" img={user2} type="Programação"/>
             </div>
           </div>
+
         </div>
       </div>
     </>

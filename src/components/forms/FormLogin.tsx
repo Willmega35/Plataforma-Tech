@@ -5,7 +5,7 @@ import style from "./style.module.css"
 import ConectaApi from "../../server/conectaApi"
 import { User } from "../../type/user"
 
-export default function FormsLogin (){
+export default function FormLogin (){
   
   const navigate = useNavigate();
   const { register, handleSubmit } = useForm()
@@ -21,23 +21,21 @@ export default function FormsLogin (){
       console.log('Usuario Cadastrado na Plataforma')
       navigate('/user')
     }
-    // if ( (data.password == requestData[0].name))
-    // console.log(requestData)
   }
   
   return(
     <form onSubmit={handleSubmit(validSubmit)} className={style.forms}>
-      <span className={style.campDeAcesso}>
-        <label htmlFor="" className={style.textPerf}>Email ou Usuario</label>
-        <input { ...register('user')} className={style.inputCamp} type="text"/>
-      </span>
+      <div className={style.camp}>
+        <label htmlFor="">Email ou Usuario</label>
+        <input { ...register('user')} type="text" placeholder="Digite seu email ou usuário"/>
+      </div>
 
-      <span className={style.campDeAcesso}>
-        <label htmlFor="" className={style.textPerf}>Senha</label>
-        <input {...register('password')} className={style.inputCamp} type="password" />
-      </span>
+      <div className={style.camp}>
+        <label htmlFor="">Senha</label>
+        <input {...register('password')} type="password" placeholder="Digite sua senha"/>
+      </div>
 
-      <button className={style.button} type="submit">Login</button>
+      <button type="submit">Login</button>
     </form>
   )
 }

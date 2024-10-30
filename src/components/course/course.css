@@ -6,7 +6,7 @@
   background-color: var(--color1);
   gap: 1rem;
   border-radius: 25px;
-  filter: drop-shadow(0 0 4px black);
+  filter: drop-shadow(0 4px 4px black);
   & h1 {
     font-family: var(--font1);
     font-weight: 600;

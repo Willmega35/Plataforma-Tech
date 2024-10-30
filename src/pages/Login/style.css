@@ -1,6 +1,6 @@
 body:has(.login-container) {
   background-color: var(--background) !important;
-  box-sizing: border-box;
+  color: white;
 }
 
 .login-container {
@@ -29,9 +29,9 @@ body:has(.login-container) {
       /* Decrição */
       & > p {
         text-align: center;
-        font: 300 1em var(--font1);
+        font: 400 1em var(--font1);
         & a {
-          color: white;
+          color: var(--color3);
           text-decoration: none;
           &:hover {
             text-decoration: underline;
@@ -66,10 +66,10 @@ body:has(.login-container) {
       padding: 0.5rem;
       & h1 {
         text-align: center;
-
         font-family: var(--font1);
       }
       & img {
+        margin-top: 1rem;
         min-width: 400px;
         max-width: 600px;
         width: 50%;
